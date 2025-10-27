@@ -1,0 +1,223 @@
+ ✓ Ready in 5.9s
+开始检查未完成任务...
+没有需要恢复的任务
+File upload request processing, parameters: { projectId: 'vP-RKwCXhK7i' }
+Project information retrieved successfully: TEST-01
+Try using alternate methods for file upload...
+Get file name from request header: 城市交通分析數據集-new.md
+The file upload process is complete, and a successful response is returned
+start processing file processing task: VVolQ8460jGgoojZrAtGF
+Total pages to process: 1
+vP-RKwCXhK7i 城市交通分析數據集-new.md 城市交通分析數據集-new.md Text split completed
+domainTreeAction rebuild
+[vP-RKwCXhK7i] Rebuilding domain tree
+1111
+# Role: Domain Classification Expert & Knowledge Graph Expert
+- Description: As a senior domain classification expert and knowledge graph expert, you are skilled at extracting core themes from text content, constructing classification systems, and performing knowledge categorization and labeling.
+
+## Skills:
+1. Proficient in text theme analysis and keyword extraction.
+2. Good at constructing hierarchical knowledge systems.
+3. Skilled in domain classification methodologies.
+4. Capable of building knowledge graphs.
+5. Proficient in JSON data structures.
+
+## Goals:
+1. Analyze the content of the book catalog.
+2. Identify core themes and key domains.
+3. Construct a two - level classification system.
+4. Ensure the classification logic is reasonable.
+5. Generate a standardized JSON output.
+
+## Workflow:
+1. Carefully read the entire content of the book catalog.
+2. Extract key themes and core concepts.
+3. Group and categorize the themes.
+4. Construct primary domain labels (ensure no more than 10).
+5. Add secondary labels to appropriate primary labels (no more than 5 per group).
+6. Check the rationality of the classification logic.
+7. Generate a JSON output that conforms to the format.
+
+## Catalog to be analyzed
+    ### File：城市交通分析數據集-new.md
+
+
+
+## Constraints
+1. The number of primary domain labels should be between 5 and 10.
+2. The number of secondary domain labels ≤ 5 per primary label.
+3. There should be at most two classification levels.
+4. The classification must be relevant to the original catalog content.
+5. The output must conform to the specified JSON format.
+6. The names of the labels should not exceed 6 characters.
+7. Do not output any content other than the JSON.
+8. Add a serial number before each label (the serial number does not count towards the character limit).
+9. Use English
+
+
+## OutputFormat:
+```json
+[
+  {
+    "label": "1 Primary Domain Label",
+    "child": [
+      {"label": "1.1 Secondary Domain Label 1"},
+      {"label": "1.2 Secondary Domain Label 2"}
+    ]
+  },
+  {
+    "label": "2 Primary Domain Label (No Sub - labels)"
+  }
+]
+```
+
+rebuild tags [
+  {
+    label: '1 Traffic',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '2 Network',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '3 Vehicle',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '4 Travel',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '5 Signal',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '6 Safety',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  {
+    label: '7 Public',
+    child: [ [Object], [Object], [Object], [Object], [Object] ]
+  },
+  { label: '8 Data' }
+]
+File processing completed successfully
+task VVolQ8460jGgoojZrAtGF finished
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[distill/questions/by-tag] 请求参数: { projectId: 'vP-RKwCXhK7i', tagId: '_Hpw1O9R595Cx3xX7dWyB' }
+[distill/questions/by-tag] 标签信息: {
+  id: '_Hpw1O9R595Cx3xX7dWyB',
+  label: '1 Traffic',
+  projectId: 'vP-RKwCXhK7i',
+  parentId: null
+}
+[distill/questions/by-tag] 请求参数: { projectId: 'vP-RKwCXhK7i', tagId: 'trjTTIErJPHe6DjdZ9pqm' }
+[distill/questions/by-tag] 标签信息: {
+  id: 'trjTTIErJPHe6DjdZ9pqm',
+  label: '2 Network',
+  projectId: 'vP-RKwCXhK7i',
+  parentId: null
+}
+[distill/questions/by-tag] 请求参数: { projectId: 'vP-RKwCXhK7i', tagId: 'QfUrxlXRMW6AqvpVk13a1' }
+[distill/questions/by-tag] 标签信息: {
+  id: 'QfUrxlXRMW6AqvpVk13a1',
+  label: '3 Vehicle',
+  projectId: 'vP-RKwCXhK7i',
+  parentId: null
+}
+[distill/questions/by-tag] 请求参数: { projectId: 'vP-RKwCXhK7i', tagId: 'dYqEdJrVTAnmpRhyszTvH' }
+[distill/questions/by-tag] 标签信息: {
+  id: 'dYqEdJrVTAnmpRhyszTvH',
+  label: '4 Travel',
+  projectId: 'vP-RKwCXhK7i',
+  parentId: null
+}
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[distill/questions/by-tag] 请求参数: { projectId: 'vP-RKwCXhK7i', tagId: '_Hpw1O9R595Cx3xX7dWyB' }
+[distill/questions/by-tag] 标签信息: {
+  id: '_Hpw1O9R595Cx3xX7dWyB',
+  label: '1 Traffic',
+  projectId: 'vP-RKwCXhK7i',
+  parentId: null
+}
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+1111 
+# Role: 领域问题蒸馏专家
+## Profile:
+- Description: 你是一个专业的知识问题生成助手，精通Data领域的知识。
+- Task: 为标签"Data"生成6个高质量、多样化的问题。
+- Context: 标签完整链路是：TEST-01 > 8 Data
+
+## Skills:
+1. 深入理解领域知识，能够识别和提取核心概念与关键知识点
+2. 设计多样化的问题类型，覆盖不同难度和认知层次
+3. 确保问题的准确性、清晰性和专业性
+4. 避免重复或高度相似的问题，保证问题集的多样性
+
+## Workflow:
+1. 分析"Data"的核心主题和知识结构
+2. 规划问题的难度分布，确保覆盖基础、中级和高级各个层次
+3. 设计多种类型的问题，确保类型多样性
+4. 检查问题质量，确保表述清晰、准确、专业
+5. 输出最终的问题集，确保格式符合要求
+
+## Constraints:
+1. 问题主题相关性：
+   - 生成的问题必须与"Data"主题紧密相关
+   - 确保全面覆盖该主题的核心知识点和关键概念
+
+2. 难度分布均衡 (每个级别至少占20%):
+   - 基础级：适合入门者，关注基本概念、定义和简单应用
+   - 中级：需要一定领域知识，涉及原理解释、案例分析和应用场景
+   - 高级：需要深度思考，包括前沿发展、跨领域联系、复杂问题解决方案等
+
+3. 问题类型多样化（可灵活调整，不必局限于以下类型）：
+   - 概念解释类："什么是..."、"如何定义..."
+   - 原理分析类："为什么..."、"如何解释..."
+   - 比较对比类："...与...有何区别"、"...相比...的优势是什么"
+   - 应用实践类："如何应用...解决..."、"...的最佳实践是什么"
+   - 发展趋势类："...的未来发展方向是什么"、"...面临的挑战有哪些"
+   - 案例分析类："请分析...案例中的..."
+   - 启发思考类："如果...会怎样"、"如何评价..."
+
+4. 问题质量要求：
+   - 避免模糊或过于宽泛的表述
+   - 避免可以简单用"是/否"回答的封闭性问题
+   - 避免包含误导性假设的问题
+   - 避免重复或高度相似的问题
+
+5. 问题深度和广度（可灵活调整）：
+   - 覆盖主题的历史、现状、理论基础和实际应用
+   - 包含该领域的主流观点和争议话题
+   - 考虑该主题与相关领域的交叉关联
+   - 关注该领域的新兴技术、方法或趋势
+
+## Existing Questions (Optional):
+
+
+## Output Format:
+- 返回JSON数组格式，不包含额外解释或说明
+- 格式示例：["问题1", "问题2", "问题3", ...]
+- 每个问题应该是完整的、自包含的，无需依赖其他上下文即可理解和回答
+
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+成功生成标准数据集: 数据湖与数据仓库在架构设计、数据处理方式和适用场景方面有哪些主要区别？
+成功生成标准数据集: 在构建企业级数据中台时，如何平衡数据标准化与业务灵活性的需求？
+成功生成标准数据集: 随着数据隐私法规的日益严格，企业应如何构建兼顾数据利用与隐私保护的数据战略？
+成功生成标准数据集: 数据质量管理的常见挑战有哪些，以及如何通过自动化工具和流程改进数据质量？
+成功生成标准数据集: 如何设计一个可扩展的实时数据处理架构来应对高并发物联网设备数据？
+成功生成标准数据集: 什么是数据治理的核心原则及其在组织中的实际应用价值？
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }
+[getQuestionsForTree] 参数: { projectId: 'vP-RKwCXhK7i', input: null, isDistill: true }

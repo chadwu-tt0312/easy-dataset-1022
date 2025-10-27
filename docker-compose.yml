@@ -1,10 +1,13 @@
 services:
   easy-dataset:
-    image: ghcr.io/conardli/easy-dataset
+    build: .
+    image: easy-dataset:latest
+    # image: ghcr.io/conardli/easy-dataset
     container_name: easy-dataset
     ports:
-      - '1717:1717'
+      - "31908:1717"
     volumes:
       - ./local-db:/app/local-db
-      # - ./prisma:/app/prisma 如果需要挂载请先手动初始化数据库文件
+      # - ./prisma:/app/prisma 如果需要掛載請先手動初始化資料庫文件
+      # 如果需要掛載資料庫檔案（PRISMA），則需要事先執行 npm run db:push 初始化資料庫檔案。
     restart: unless-stopped
