@@ -1,0 +1,56 @@
+获取模型列表失败: Error: connect ECONNREFUSED 127.0.0.1:11434
+openai API 调用出错: E [AI_APICallError]: Resource not found
+    at D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:1:9841
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Q (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:1:8537)
+    at async z.doGenerate (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\9465.js:1:10271)
+    at async fn (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:9:31232)
+    at async D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:5:18813
+    at async B (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:5:16643)
+    at async fn (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:9:30355)
+    at async D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\2987.js:5:18813
+    at async a.chat (D:\_Code\_GitHub\easy-dataset-1022\.next\server\chunks\4928.js:1:5374) {
+  cause: undefined,
+  url: 'https://chad-openai-svc.openai.azure.com/chat/completions',
+  requestBodyValues: {
+    model: 'gpt-4o-mini',
+    logit_bias: undefined,
+    logprobs: undefined,
+    top_logprobs: undefined,
+    user: undefined,
+    parallel_tool_calls: undefined,
+    max_tokens: 8192,
+    temperature: 0.2,
+    top_p: 0.9,
+    frequency_penalty: undefined,
+    presence_penalty: undefined,
+    response_format: undefined,
+    stop: undefined,
+    seed: undefined,
+    max_completion_tokens: undefined,
+    store: undefined,
+    metadata: undefined,
+    prediction: undefined,
+    reasoning_effort: undefined,
+    messages: [ [Object] ],
+    tools: undefined,
+    tool_choice: undefined,
+    functions: undefined,
+    function_call: undefined
+  },
+  statusCode: 404,
+  responseHeaders: {
+    'apim-request-id': 'd72f72e0-032b-460b-b1fe-5ccb2c222415',
+    'content-length': '56',
+    'content-type': 'application/json',
+    date: 'Mon, 27 Oct 2025 02:44:45 GMT',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+    'x-content-type-options': 'nosniff'
+  },
+  responseBody: '{"error":{"code":"404","message": "Resource not found"}}',
+  isRetryable: false,
+  data: { error: { message: 'Resource not found', code: '404' } },
+  [Symbol(vercel.ai.error)]: true,
+  [Symbol(vercel.ai.error.AI_APICallError)]: true
+}
+Failed to call LLM API: AI_APICallError: Resource not found
